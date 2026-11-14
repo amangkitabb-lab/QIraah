@@ -525,3 +525,36 @@ a.book-opening .book-cover,a.book-opening .book-cover-pending{transform:translat
 @media(max-width:730px){.collection-showcase{padding:30px 8px}.collection-grid{grid-template-columns:1fr;gap:6px}.collection-group{padding:10px 8px 23px;border-bottom:1px solid #e1d9c9}.collection-group:last-child{border-bottom:0}.collection-cover-stack{height:255px;max-width:325px}.collection-book{height:218px}.collection-book .illustration-title{font-size:18px}.collection-book .illustration-author,.collection-book .illustration-note{display:block}.dictionary-links{grid-template-columns:1fr}.recent-item{grid-template-columns:52px 1fr;gap:12px;padding:11px}.recent-cover{width:52px;height:75px}.recent-side{grid-column:2;justify-content:space-between}.recent-item-info strong{font-size:18px}.dictionary-search>div{flex-direction:column}.dictionary-link{padding:15px}.dictionary-mark{width:46px;height:46px}.quote-index-grid{grid-template-columns:1fr}}
 @media(max-width:400px){.collection-cover-stack{height:228px;max-width:270px}.collection-book{height:189px}.collection-book .illustration-title{font-size:13px}.recent-empty{flex-wrap:wrap}.recent-empty>a{margin-left:auto}}
 @media(prefers-reduced-motion:reduce){.collection-book,.collection-book .book-cover,.book-card .book-cover,.recent-cover .book-cover,.dictionary-link{transition:none!important}}
+
+/* v2.6 recovery: showcase only the two muallif collections, emphasize real scans in private review. */
+:root{--ink:#263e30;--sage-d:#254d3b;--sage:#78957b}
+body{background:#fbfcf9}
+.muallif-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px}
+.muallif-grid>.muallif-card{grid-column:auto!important;min-height:250px}
+.q-draft-rack .summary-intro{padding-top:50px;padding-bottom:35px}
+.q-draft-rack .book-grid{row-gap:36px}
+.review-caution{font-size:12px;line-height:1.6;color:#806a43;margin-top:16px;padding:12px 17px;border-left:3px solid #bc965e;background:#faf4e7;border-radius:0 10px 10px 0;max-width:730px}
+.book-cover.original-cover{background:#f4f1e7;border:1px solid #e1e2d8;box-shadow:4px 13px 25px rgba(36,54,36,.18)}
+.original-cover img{object-fit:contain;background:#f6f3e9}
+.book-card .book-title{min-height:38px}
+.book-card:focus-within .book-cover{outline:3px solid #83a28c;outline-offset:4px}
+.book-card .book-below{line-height:1.55}
+.collection-book .original-cover img{object-fit:cover}
+@media(max-width:760px){.muallif-grid{grid-template-columns:1fr!important}.muallif-grid>.muallif-card{min-height:205px}.q-draft-rack .summary-intro{padding-top:30px}.review-caution{font-size:11px}}
+
+/* v2.6 visual focus: books first, status follows, no false completed badges */
+.lead-v18{padding-bottom:4px}
+.hero-feature-v18{margin-top:17px;margin-bottom:22px}
+.editorial-dashboard{margin-top:5px;margin-bottom:18px}
+.reading-dashboard{margin-top:0;margin-bottom:54px}
+.catalog-note{margin:27px 0;padding:23px 25px;background:#f3f6ef;border:1px solid #e3eadf;border-radius:17px}
+.catalog-note p{font-size:17px;color:#385440;line-height:1.75}
+@media(max-width:760px){.hero-feature-v18{margin-top:16px}.reading-dashboard{margin-bottom:43px}.lead-v18{padding-bottom:2px}}
+/* v2.6 navigation polish: prevent desktop links from wrapping into two rows */
+@media(min-width:761px){
+ .navwrap{gap:17px}
+ .wordmark{flex:0 0 auto}
+ .navlinks{display:flex;gap:clamp(10px,1.1vw,17px);flex-wrap:nowrap;min-width:0;justify-content:center}
+ .navlinks .navlink{font-size:clamp(11px,.96vw,14px)!important;white-space:nowrap;line-height:1.2}
+ .navend{flex:0 0 auto}
+}
