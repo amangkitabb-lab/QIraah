@@ -1,0 +1,26 @@
+{
+  "project": "Qiraah",
+  "release": "2.7.0",
+  "catalog": 95,
+  "editorial_approval": {
+    "stated_by": "Pemilik proyek Qiraah, percakapan 2026-11-14",
+    "status": "disetujui pemilik",
+    "disclaimer": "Persetujuan editorial bukan bukti pemeriksaan OCR maupun izin pihak pemegang hak."
+  },
+  "rights": {
+    "Al-Buthi": "Pemilik menyatakan telah memperoleh izin untuk seluruh karya al-Buthi; bukti spesifik edisi belum dilampirkan di paket.",
+    "Al-Adni": "Belum ada bukti izin penerbitan dari pemegang hak; periksa sebelum mengunggah versi lengkap."
+  },
+  "summaries_included": 86,
+  "by_author": {
+    "Al-Buthi": 41,
+    "Al-Adni": 45
+  },
+  "source_covers_included": 60,
+  "missing_summaries": 9,
+  "missing_covers": 35,
+  "summary_coverage_full": 6,
+  "summary_coverage_partial": 80,
+  "source_md_public": false,
+  "editorial_source_files_public": false
+}
