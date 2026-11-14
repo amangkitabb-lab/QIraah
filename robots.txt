@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /rak/
+Allow: /QIraah/
+Sitemap: https://amangkitabb-lab.github.io/QIraah/sitemap.xml

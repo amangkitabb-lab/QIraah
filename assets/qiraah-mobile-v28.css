@@ -1,0 +1,61 @@
+/* Qira'ah v2.8 / MD-only mobile usability patch */
+.brand-qaf-icon{width:28px;height:28px;display:block;object-fit:contain}
+.wordmark .mark{flex:0 0 38px}
+.illustration-top>img{display:block;width:28px;height:28px}
+.reader-main.reader-main-3col{grid-template-columns:minmax(165px,215px) minmax(0,760px);justify-content:center;gap:clamp(22px,4vw,48px)}
+.reader-rail{display:none!important}
+.q-original-simple{border:1px solid #dae7da;border-radius:16px;padding:clamp(18px,3vw,28px);background:#f8faf7;margin:40px 0 12px}
+.q-original-simple h2{margin:9px 0 10px}.q-original-simple p{margin-bottom:14px}
+.q-original-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0}
+.q-original-btn{min-height:46px;text-align:center;max-width:100%;font-size:14px}
+.q-original-unavailable{color:#66776a;font-size:14px;border:1px dashed #d9e3d8;border-radius:8px;padding:12px}
+.reader-intro-copy h1,.book-title,.reader-copy [lang="ar"],.reading-pane [dir="rtl"]{overflow-wrap:anywhere;word-break:normal}
+.reader-copy{min-width:0;overflow-wrap:break-word}
+.reader-copy h2,.reader-copy h3{scroll-margin-top:125px}
+@media(max-width:900px){
+ .reader-main.reader-main-3col{display:block;max-width:760px;margin:24px auto}
+ .reader-main.reader-main-3col .toc{position:relative;top:auto;max-height:none;overflow:visible;border:1px solid #e4ebe2;border-radius:12px;padding:12px 14px;margin-bottom:22px}
+ .reader-main.reader-main-3col .toc a{min-height:38px;padding:10px 8px}
+}
+@media(max-width:760px){
+ html{scroll-padding-top:84px;scroll-padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+ body{padding-bottom:calc(80px + env(safe-area-inset-bottom));overflow-x:clip}
+ .topbar{height:62px}
+ .topbar .navend{display:none}
+ .wordmark{font-size:22px}.wordmark .mark{width:34px;height:34px;flex-basis:34px}
+ .mobile-nav{height:calc(64px + env(safe-area-inset-bottom));padding-top:5px;padding-bottom:max(6px,env(safe-area-inset-bottom))}
+ .mobile-nav a{min-height:46px;min-width:0;flex:1;padding:5px 1px;font-size:11px;line-height:1.2}
+ .mobile-nav b{font-size:21px;line-height:1.1}
+ .shell,.reader-container{width:calc(100% - 32px)}
+ .lead{padding-top:32px}
+ .lead h1{font-size:clamp(32px,8vw,41px);line-height:1.1;letter-spacing:-1.1px}
+ .lead p{font-size:15px;line-height:1.65}
+ .reader-intro-new{display:grid;grid-template-columns:78px minmax(0,1fr);gap:15px;padding:17px 0 22px}
+ .reader-intro-new .book-cover{width:78px;height:108px;max-width:78px}
+ .reader-intro-copy h1{font-size:clamp(23px,6vw,29px);line-height:1.6;display:block;max-width:100%;text-align:right}
+ .reader-intro-copy .small-meta{gap:5px;margin-top:7px}
+ .reader-actions{display:flex;gap:8px;flex-wrap:wrap}
+ .reader-actions .btn{min-height:44px;flex:1 1 120px;padding:9px 10px;font-size:13px}
+ .reading-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+ .reading-controls .reader-control{min-height:44px;min-width:44px}
+ .reader-main.reader-main-3col{margin-top:10px}
+ .reader-main.reader-main-3col .toc{margin-bottom:14px;padding:10px 12px;max-height:220px;overflow-y:auto;overscroll-behavior:contain}
+ .reading-pane{width:100%;min-width:0}
+ .reading-pane p,.reader-copy p{font-size:clamp(16px,4.4vw,18px);line-height:1.8;overflow-wrap:break-word}
+ .reading-pane h2{font-size:clamp(20px,5.5vw,24px);line-height:1.45}
+ .book-title{font-size:clamp(16px,4vw,20px);line-height:1.55}
+ .book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 13px}
+ .cover-wrap{margin-bottom:10px}
+ .hero-feature{overflow:hidden}
+ .q-original-simple{padding:16px;border-radius:13px}
+ .q-original-actions{display:grid;grid-template-columns:1fr;gap:10px}
+ .q-original-btn{width:100%;min-height:48px;justify-content:center}
+ .q-original-unavailable{width:100%;box-sizing:border-box}
+ .q-original-simple .commerce-caption{font-size:12px;line-height:1.7}
+ .toolbar select,.toolbar input,.q-author-filter select{min-height:44px;max-width:100%}
+ .status-filter button,.chips button{min-height:40px}
+ .reading-finish-notice{margin-bottom:24px}
+ .footer{padding-bottom:35px}
+}
+@media(max-width:345px){.book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 10px}.wordmark>span:last-child{display:none}.mobile-nav a{font-size:10px}.reader-intro-new{grid-template-columns:65px minmax(0,1fr);gap:10px}.reader-intro-new .book-cover{width:65px;height:90px}.reading-pane p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.book-cover,.btn,.hero-book,.book-link,.bookmark-float{animation:none!important;transition:none!important}html{scroll-behavior:auto!important}}
