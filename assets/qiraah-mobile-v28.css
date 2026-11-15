@@ -73,3 +73,16 @@
  .site-footer .footer-bottom{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
  .q-original-simple .legal-inline{display:inline;text-decoration:underline}
 }
+
+
+/* Chapter index styled as native accessible disclosure */
+.q-toc-disclosure{align-self:start;border:1px solid #dbe5d9;border-radius:14px;background:#fff;padding:0;overflow:hidden}
+.q-toc-disclosure summary{display:flex;align-items:center;justify-content:space-between;gap:10px;list-style:none;cursor:pointer;padding:15px 18px;font-size:15px;color:#284f38;font-weight:750;min-height:50px;user-select:none}
+.q-toc-disclosure summary::-webkit-details-marker{display:none}
+.q-toc-disclosure summary span{font-size:21px;line-height:1;transition:transform .2s}
+.q-toc-disclosure[open] summary span{transform:rotate(180deg)}
+.q-toc-disclosure .q-toc-links{padding:10px 14px 15px;border-top:1px solid #dbe5d9}
+.q-toc-disclosure .q-toc-links a{display:block;overflow-wrap:break-word;padding:10px 12px;border-radius:9px;line-height:1.6}
+.q-toc-disclosure .q-toc-links a:hover{background:#f1f6ef}
+@media(max-width:900px){.reader-main.reader-main-3col .q-toc-disclosure{position:relative;top:auto;padding:0;max-height:none;overflow:hidden}.q-toc-disclosure .q-toc-links{max-height:55vh;overflow:auto}}
+@media(max-width:760px){.reader-main.reader-main-3col .q-toc-disclosure{max-height:none;overflow:visible;margin-bottom:16px}.q-toc-disclosure .q-toc-links{max-height:260px;overflow-y:auto}.q-toc-disclosure summary{font-size:16px}}
