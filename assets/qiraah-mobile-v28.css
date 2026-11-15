@@ -59,3 +59,17 @@
 }
 @media(max-width:345px){.book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 10px}.wordmark>span:last-child{display:none}.mobile-nav a{font-size:10px}.reader-intro-new{grid-template-columns:65px minmax(0,1fr);gap:10px}.reader-intro-new .book-cover{width:65px;height:90px}.reading-pane p{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.book-cover,.btn,.hero-book,.book-link,.bookmark-float{animation:none!important;transition:none!important}html{scroll-behavior:auto!important}}
+
+
+/* Copyright contact and accessible browser speech controls, v2.8.1 */
+.legal-inline{color:#345b46;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.site-footer a[href*="/hak-cipta/"]{color:#345b46;font-weight:700}
+.site-footer .footer-bottom a[href*="/hak-cipta/"]{font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.q-audio-button{border:1px solid #b7cdbc;background:#edf4ec;color:#28553b;min-width:130px}
+.q-audio-button[aria-pressed="true"]{background:#345b46;color:#fff}
+.q-audio-button:focus-visible,.legal-inline:focus-visible{outline:3px solid #8ab795;outline-offset:3px}
+@media(max-width:760px){
+ .reader-actions .q-audio-button{min-height:48px;flex:1 1 135px}
+ .site-footer .footer-bottom{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+ .q-original-simple .legal-inline{display:inline;text-decoration:underline}
+}
