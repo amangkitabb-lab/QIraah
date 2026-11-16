@@ -33,3 +33,18 @@
 - Kelipatan 200 halaman: 352=2 unit; 469=3 unit. Ikuti batas bab bila memungkinkan.
 - Durasi 5 menit diterima untuk nazam tipis yang penjelasannya lengkap; jangan memaksa 10 menit. Daftar isi mengikuti **setiap judul bagian asli**, termasuk jika 15 judul. Sumber motivasi penulisan dari muqaddimah; isi menjelaskan pembahasan, bukan pengantar generik.
 - Aturan terbaru disimpan dalam QIRAAH_EDITORIAL_PIPELINE.md dan QIRAAH_BATCH_QUEUE.json. Naskah situs belum berubah oleh pembaruan metadata ini.
+
+## Implementasi Batch 1 (2026-11-16) — bukti GitHub
+Lima ringkasan Qira’ah berhasil **diganti langsung pada `assets/books.js` di branch `main`**, bukan hanya dibuat sebagai draf chat. Data kitab lain tidak dihapus. Lima fallback HTML `kitab/<ID>/index.html` kini memuat bacaan yang sesuai, meta-description baru, serta query cache data versi `b1-20261116`. Entry pages beranda, katalog, Sudah Diringkas, Rak dan Tentang juga memakai query versi tersebut.
+
+| ID | PDF | Kata Indonesia | Durasi rumus 190 kata/menit | Judul isi | Catatan |
+|---|---:|---:|---:|---:|---|
+| AD-026 | 14p | 858 | 5m | Nazam haji, 6 bagian sumber | OCR bait rusak; cek visual belum tuntas |
+| AD-029 | 26p | 1.932 | 11m | Fikih dakwah, 20 bekal dai | Teks PDF ditelusuri; kritik sejarah diatribusi |
+| AD-034 | 31p | 1.788 | 10m | 4 bab akhlak pemegang mimbar | PDF menyatakan hak cetak penerbit dilindungi |
+| AD-035 | 36p | 1.431 | 8m | Biografi + lampiran syair dipisahkan | Sumber bertanda `نسخة تحت التعديل` |
+| AD-033 | 70p | 2.313 | 13m | 14 khutbah diberi heading tersendiri | p66 mencatat lembaran berserakan |
+
+Laporan penelusuran: `QIRAAH_BATCH1_QA_2026-11-16.md` di GitHub. Pemilik meminta final editorial; naskah diproses AI, **bukan human independent QC**. Edisi, OCR/urutan halaman, dan hak adaptasi/publikasi untuk al-Adni belum diverifikasi sebagai cleared. Semua teks publik **parafrase Indonesia baru**, bukan PDF penuh. Hitungan katalog kini 85 buku, 70 mempunyai ringkasan, 65 dari 70 masih di bawah 10 menit; lima naskah batch menjadi 5,11,10,8,13 menit. Berikutnya prioritas `AD-027` (78p), `AD-032` (97p), lalu `AD-030` (118p), `AD-028` (352p/2 unit), `AD-031` (469p/3 unit).
+
+Status Pages: commit Github terverifikasi; verifikasi deployment URL dapat tertunda. Jangan mengklaim live/HP telah diuji bila belum ada bukti.
