@@ -31,6 +31,6 @@ Katalog lain **tidak dihapus** dan tidak ada teks sumber PDF/MD asli ditambahkan
 - [ ] **Independent reviewer manusia:** tidak dilakukan; perbaikan dilakukan sebagai AI editorial review.
 - [ ] **QA visual seluruh bait** nazam dan pemindaian lembaran khutbah yang bermasalah: masih diperlukan apabila ingin klaim audit filologis tuntas.
 - [ ] **Uji visual HP/browser nyata:** belum dilakukan dalam proses ini.
-- [ ] **GitHub Pages live:** harus dipastikan melalui status workflow dan akses URL setelah deployment, bukan hanya commit.
+- [x] **GitHub Pages live:** GitHub Pages run 38 menyelesaikan deploy dengan conclusion `success`; kelima URL kitab AD-026, AD-029, AD-034, AD-035, AD-033 memberi HTTP 200 dan menampilkan teks baru beserta menit baca 5, 11, 10, 8, 13 pada live scrape tanpa cache (16-11-2026). **Belum** dilakukan tes fisik/visual di HP; audio terlihat tapi pemutaran suara belum diuji.
 
 Semua label `summaryCoverage:full` berarti **semua bagian pokok sumber sudah dibahas secara tematik**, bukan terjemahan lengkap per bait atau per khutbah, dan bukan tanda otomatis `rights=cleared`.
