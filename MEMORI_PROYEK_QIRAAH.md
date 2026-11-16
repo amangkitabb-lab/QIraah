@@ -26,3 +26,10 @@
 ## Operasional lintas percakapan
 - Trigger singkat: `LANJUT QIRAAH BATCH` dalam proyek yang sama. Baca `QIRAAH_BATCH_QUEUE.json`, cari sumber di Project Sources, jangan meminta unggah ulang semua PDF.
 - Pekerjaan tidak berjalan di latar belakang: setiap lanjutan perlu sesi pengguna aktif. Setelah setiap batch, laporkan naskah, jumlah kata, menit, gate, commit/PR/live verification dan perbarui memori ini.
+
+## Koreksi aturan 2026-11-16 (batch 1)
+- Sumber ZIP PDF 449 MB saat ini **tidak dapat dimaterialisasi** oleh pembaca Project (batas 100 MB), tetapi 10 PDF individual terunggah dan dapat dibaca.
+- Urutan dari 10 file terakses: 14, 26, 31, 36, 70, 78, 97, 118, 352, 469 halaman. Tujuh file <=100 halaman didahulukan. Ini **bukan** klaim inventaris seluruh ZIP.
+- Kelipatan 200 halaman: 352=2 unit; 469=3 unit. Ikuti batas bab bila memungkinkan.
+- Durasi 5 menit diterima untuk nazam tipis yang penjelasannya lengkap; jangan memaksa 10 menit. Daftar isi mengikuti **setiap judul bagian asli**, termasuk jika 15 judul. Sumber motivasi penulisan dari muqaddimah; isi menjelaskan pembahasan, bukan pengantar generik.
+- Aturan terbaru disimpan dalam QIRAAH_EDITORIAL_PIPELINE.md dan QIRAAH_BATCH_QUEUE.json. Naskah situs belum berubah oleh pembaruan metadata ini.
