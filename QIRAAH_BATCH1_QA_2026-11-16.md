@@ -34,3 +34,6 @@ Katalog lain **tidak dihapus** dan tidak ada teks sumber PDF/MD asli ditambahkan
 - [x] **GitHub Pages live:** GitHub Pages run 38 menyelesaikan deploy dengan conclusion `success`; kelima URL kitab AD-026, AD-029, AD-034, AD-035, AD-033 memberi HTTP 200 dan menampilkan teks baru beserta menit baca 5, 11, 10, 8, 13 pada live scrape tanpa cache (16-11-2026). **Belum** dilakukan tes fisik/visual di HP; audio terlihat tapi pemutaran suara belum diuji.
 
 Semua label `summaryCoverage:full` berarti **semua bagian pokok sumber sudah dibahas secara tematik**, bukan terjemahan lengkap per bait atau per khutbah, dan bukan tanda otomatis `rights=cleared`.
+
+## Kendala pengujian mobile
+Uji interaksi Firecrawl browser mobile viewport 390 x 844 pada halaman AD-033 (daftar isi, CTA, overflow, audio) **timeout sebelum mengembalikan hasil**. Tidak ada klaim lulus visual maupun uji putar audio. Ini berbeda dari lima scrape live HTTP 200 yang sukses memverifikasi isi teks dan estimasi durasi.
