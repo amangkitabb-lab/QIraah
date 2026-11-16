@@ -376,14 +376,83 @@
       "segments": 3
     }
   ],
-  "status": "batch_2_five_book_pages_live_verified; 3_main_toc_complete; 2_themes_partial; rights_and_human_QA_open",
+  "status": "batch_3_source_preflight_documented_not_written_not_deployed",
   "batch_1_outcome": "five original Indonesian readings committed to main, static HTML updated, five public book URLs HTTP 200 and updated duration verified",
   "batch_1_completed_at": "2026-11-16",
   "batch_1_qa_file": "QIRAAH_BATCH1_QA_2026-11-16.md",
-  "next_batch_ids": [],
-  "next_priority": "Follow up granular TOC per-heading coverage for AD-028 and AD-031; independent rights and OCR QC; then choose remaining books from accessible PDF inventory",
+  "next_batch_ids": [
+    "AB-001",
+    "AB-007",
+    "AB-030",
+    "AB-031",
+    "AB-011"
+  ],
+  "next_priority": "Prepare source-anchored chapter maps and full Indonesian reading drafts for AB-007, AB-030, AB-031, AB-011, with AB-001 edition QC; separately complete granular AD-028 and AD-031.",
   "github_pages_workflow_success": "https://github.com/amangkitabb-lab/QIraah/actions/runs/43869827842",
   "batch_2_completed_at": "2026-11-16",
   "batch_2_outcome": "All five book URLs HTTP200 with updated text; 3 books include all original major headings; 2 long books serial source maps, partial thematic summary pending every small heading.",
-  "batch_2_qa_file": "QIRAAH_BATCH2_QA_2026-11-16.md"
+  "batch_2_qa_file": "QIRAAH_BATCH2_QA_2026-11-16.md",
+  "batch_3": [
+    "AB-001",
+    "AB-007",
+    "AB-030",
+    "AB-031",
+    "AB-011"
+  ],
+  "batch_3_phase": "source_preflight_only_not_drafted_or_published",
+  "batch_3_candidate_source_audit": "QIRAAH_BATCH3_SOURCE_AUDIT_2026-11-16.md",
+  "batch_3_selection_basis": "4 Archive.org PDF URLs with page counts verified from PDF metadata (35,36,49,63); AB-001 27 pages from preexisting catalogue and source-lock conflict. Not a ranking of all files in the user's PDF ZIP.",
+  "batch_3_candidate_books": [
+    {
+      "book_id": "AB-001",
+      "pdf_pages": 27,
+      "page_count_basis": "prior_catalogue_unverified_today",
+      "source_url": "https://archive.org/download/nasai_yopmail_20180313/%D8%A3%D8%AF%D8%A8%20%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B1.pdf",
+      "phase": "edition_url_conflict_audit",
+      "existing_summary_words": 2320,
+      "rights_status": "audit"
+    },
+    {
+      "book_id": "AB-007",
+      "pdf_pages": 35,
+      "page_count_basis": "Archive PDF metadata HTTP200",
+      "source_url": "https://archive.org/download/elbouti/3oqoubate.pdf",
+      "phase": "toc_and_source_qc_pending",
+      "existing_summary_words": 602,
+      "rights_status": "audit"
+    },
+    {
+      "book_id": "AB-030",
+      "pdf_pages": 36,
+      "page_count_basis": "Archive PDF metadata HTTP200",
+      "source_url": "https://archive.org/download/elbouti/3inaya.pdf",
+      "phase": "toc_and_source_qc_pending",
+      "existing_summary_words": 736,
+      "rights_status": "audit"
+    },
+    {
+      "book_id": "AB-031",
+      "pdf_pages": 49,
+      "page_count_basis": "Archive PDF metadata HTTP200",
+      "source_url": "https://archive.org/download/elbouti/mojmalchobohate.pdf",
+      "phase": "toc_and_source_qc_pending",
+      "existing_summary_words": 641,
+      "rights_status": "audit"
+    },
+    {
+      "book_id": "AB-011",
+      "pdf_pages": 63,
+      "page_count_basis": "Archive PDF metadata HTTP200",
+      "source_url": "https://archive.org/download/elbouti/difa3.pdf",
+      "phase": "closing_pages_and_source_qc_pending",
+      "existing_summary_words": 653,
+      "rights_status": "audit"
+    }
+  ],
+  "batch_3_blockers": [
+    "Uploaded PDF ZIP exceeds Files reader size limit (449680907 B).",
+    "Uploaded Markdown ZIP materialized but container tool errors prevent inspecting contents.",
+    "Firecrawl connected credit exhausted before full PDF text extraction.",
+    "Rights for public adaptation per-edition not documented; human source audit pending."
+  ]
 }
