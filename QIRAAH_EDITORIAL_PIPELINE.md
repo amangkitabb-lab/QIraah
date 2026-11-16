@@ -37,3 +37,11 @@ Audit `assets/books.js` pada 2026-11-16: **85** kitab katalog, **70** naskah Ind
 `BOOK_ID | judul | halaman sumber terverifikasi | cakupan bagian asli | kata | menit | status QC | status hak | link halaman/commit | kekurangan`.
 
 **Keputusan produk**: PDF otoritatif, MD sekunder, batch 5, target artikel 10–15 menit dengan penjelasan berlandaskan kitab, status naskah dan hak dipisah, tidak menghapus naskah lama sebelum backup dan bukti pembaruan.
+
+## Revisi aturan 2026-11-16: putusan terbaru pemilik
+- Pilih **PDF terpendek dan yang <=100 halaman terlebih dahulu**. Untuk arsip ZIP 449MB yang belum bisa diperiksa, buat shortlist hanya dari PDF individual yang memang terakses; jangan mengklaim ranking seluruh ZIP.
+- Setiap **kelipatan ~200 halaman** merupakan satuan pengerjaan bagi buku besar (mis. 352 -> 2 tahap, 469 -> 3 tahap). Jangan memutus bab asli di tengah argumen hanya demi angka 200; catat batas halaman tiap unit.
+- **Tidak memaksa durasi minimal 10 menit** untuk nazam/kitab sangat tipis. Misalnya 5 menit sudah memadai bila setiap bagian selesai dijelaskan. Jangan memanjangkan artikel dengan petuah generik atau mengada-ada.
+- **Daftar isi situs mengikuti semua judul bab/bagian asli** dalam PDF. Kalau nazam mempunyai 15 judul, buat 15 bagian yang sesuai, meskipun ada yang pendek. Bila memang tanpa subjudul, pengelompokan editor harus diberi label jelas sebagai pengelompokan editorial, tidak dipalsukan sebagai judul pengarang.
+- **Asal-usul kitab** harus disarikan dari muqaddimah atau sumber yang benar-benar tersedia dan menjelaskan motivasi penulisan; bedakan dari prolog editorial. Setiap bagian menerangkan isi, argumen, kisah dan contoh kitab, **bukan sinopsis atau epilog**.
+- Audit typo, kesinambungan, atribusi, dan cocok halaman PDF sebelum ACC. Pengesahan editorial oleh AI dapat dicatat secara khusus tetapi bukan pemeriksaan manusia independen. Hak publikasi tetap status tersendiri.
