@@ -9,13 +9,19 @@
   "trigger_phrase": "LANJUT QIRAAH BATCH",
   "publication_rule": "Publish only after full source/content QC, owner editorial approval and evidence of rights; edit existing book_id, verify deployment",
   "reading_rule": {
-    "min_minutes": 10,
+    "min_minutes": null,
     "preferred_max_minutes": 15,
     "estimate_words_per_minute": 190,
     "min_words": 1900,
     "preferred_max_words": 2850,
     "no_padding_or_fabrication": true,
-    "long_books_may_have_multiple_10_to_15_minute_series": true
+    "long_books_may_have_multiple_10_to_15_minute_series": true,
+    "min_words_for_normal_prose": 1900,
+    "short_text_exception": true,
+    "short_text_preferred_minutes": 5,
+    "all_original_headings_in_toc": true,
+    "original_muqaddimah_for_provenance": true,
+    "keep_exact_chapter_titles_when_readable": true
   },
   "batch_1": [
     "AD-026",
@@ -52,11 +58,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 170,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 1,
+      "marked_complete": false
     },
     {
       "book_id": "AD-027",
@@ -71,11 +79,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 166,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 1,
+      "marked_complete": false
     },
     {
       "book_id": "AD-028",
@@ -90,11 +100,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 172,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 2,
+      "marked_complete": false
     },
     {
       "book_id": "AD-029",
@@ -109,11 +121,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 186,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 1,
+      "marked_complete": false
     },
     {
       "book_id": "AD-030",
@@ -128,11 +142,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 182,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 1,
+      "marked_complete": false
     },
     {
       "book_id": "AD-031",
@@ -147,11 +163,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 171,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 3,
+      "marked_complete": false
     },
     {
       "book_id": "AD-032",
@@ -166,11 +184,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 196,
       "public_site_estimated_minutes": 2,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 1,
+      "marked_complete": false
     },
     {
       "book_id": "AD-033",
@@ -185,11 +205,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 171,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 1,
+      "marked_complete": false
     },
     {
       "book_id": "AD-034",
@@ -204,11 +226,13 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 158,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 1,
+      "marked_complete": false
     },
     {
       "book_id": "AD-035",
@@ -223,11 +247,68 @@
       "public_site_coverage": "partial",
       "public_site_summary_words": 171,
       "public_site_estimated_minutes": 1,
-      "quality_status": "source_audit_needed",
+      "quality_status": "source_audit_in_progress",
       "editorial_approved_for_replacement": false,
       "rights_status": "unverified_for_adaptation_and_publication",
       "publication_status": "no_new_text_published",
-      "updated_at": "2026-11-16"
+      "updated_at": "2026-11-16",
+      "estimated_source_segments": 1,
+      "marked_complete": false
+    }
+  ],
+  "selection_basis": "10 individual PDF files directly accessible in Project. KITAB PDF.zip (~450MB) cannot be inventoried by current Files backend (100MB materialization limit); do not claim these are globally shortest across whole archive.",
+  "sorting_rule": {
+    "first": "PDF <=100 pages first, ascending",
+    "next": "PDF 101-200 pages",
+    "large": "for >200 pages, divide into ceil(page_count/200) sequential ~200-page source segments; keep original chapter boundaries when a boundary falls nearby",
+    "long_text": "one 10-15 minute reading unit per coherent segment if supported; do not compress away original sections",
+    "thin_poems": "allow 3-7 minute complete editorial summary when work truly short; 5 minutes ideal, no padding"
+  },
+  "prioritized_under_100": [
+    {
+      "id": "AD-026",
+      "pdf_pages": 14
+    },
+    {
+      "id": "AD-029",
+      "pdf_pages": 26
+    },
+    {
+      "id": "AD-034",
+      "pdf_pages": 31
+    },
+    {
+      "id": "AD-035",
+      "pdf_pages": 36
+    },
+    {
+      "id": "AD-033",
+      "pdf_pages": 70
+    },
+    {
+      "id": "AD-027",
+      "pdf_pages": 78
+    },
+    {
+      "id": "AD-032",
+      "pdf_pages": 97
+    }
+  ],
+  "after_under_100": [
+    {
+      "id": "AD-030",
+      "pdf_pages": 118,
+      "segments": 1
+    },
+    {
+      "id": "AD-028",
+      "pdf_pages": 352,
+      "segments": 2
+    },
+    {
+      "id": "AD-031",
+      "pdf_pages": 469,
+      "segments": 3
     }
   ]
 }
