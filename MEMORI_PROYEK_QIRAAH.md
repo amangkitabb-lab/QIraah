@@ -48,3 +48,6 @@ Lima ringkasan Qira’ah berhasil **diganti langsung pada `assets/books.js` di b
 Laporan penelusuran: `QIRAAH_BATCH1_QA_2026-11-16.md` di GitHub. Pemilik meminta final editorial; naskah diproses AI, **bukan human independent QC**. Edisi, OCR/urutan halaman, dan hak adaptasi/publikasi untuk al-Adni belum diverifikasi sebagai cleared. Semua teks publik **parafrase Indonesia baru**, bukan PDF penuh. Hitungan katalog kini 85 buku, 70 mempunyai ringkasan, 65 dari 70 masih di bawah 10 menit; lima naskah batch menjadi 5,11,10,8,13 menit. Berikutnya prioritas `AD-027` (78p), `AD-032` (97p), lalu `AD-030` (118p), `AD-028` (352p/2 unit), `AD-031` (469p/3 unit).
 
 Status Pages: commit Github terverifikasi; verifikasi deployment URL dapat tertunda. Jangan mengklaim live/HP telah diuji bila belum ada bukti.
+
+## Verifikasi website live Batch 1 (16 November 2026)
+GitHub Pages workflow run 38 `43862568124` sukses. Firecrawl maxAge:0 pada lima URL `/QIraah/kitab/AD-026/`, `AD-029`, `AD-034`, `AD-035`, `AD-033` berhasil mengembalikan HTTP 200 dan menunjukkan artikel baru, estimasi 5/11/10/8/13 menit, daftar isi, serta tombol audio. Cuplikan ringkasan pengantar lama tidak lagi tampil. QA di perangkat HP nyata dan audio play/pause belum dilakukan. Hak adaptasi al-Adni tetap belum terdokumentasi sebagai cleared dan sumber nazam AD-035 merupakan edisi dalam revisi.
