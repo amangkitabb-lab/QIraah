@@ -41,3 +41,15 @@ Keduanya mempertahankan label ringkasan tematik **partial**.
 
 ## Sumber administrasi
 [Memori proyek](./MEMORI_PROYEK_QIRAAH.md) · [Pipeline editorial](./QIRAAH_EDITORIAL_PIPELINE.md) · [Antrean](./QIRAAH_BATCH_QUEUE.json) · [Serah terima](./QIRAAH_BATCH3_HANDOFF_2026-11-16.md)
+
+## 6. Fragmen sumber primer AB-007 yang sudah diperiksa
+Sumber: halaman **Nasim al-Sham** yang menampilkan nama dan teks pengarang, https://naseemalsham.com/persons/muhammad_said_ramadan_al_bouti/subjects/view/36465 , bertanggal 12-11-2012. Halaman ini menyediakan tulisan pembuka dan link PDF. Sumber primer teks HTML ini **bukan** verifikasi bahwa semua halaman PDF Archive yang berjumlah 35 merupakan cetakan yang sama.
+
+**Jejak gagasan dalam pembuka resmi (bahasa editor, bukan kutipan langsung):**
+1. Menetapkan dua jenis sanksi menurut al-Buthi: yang jenis dan ketentuannya telah ditetapkan secara tekstual, serta yang diserahkan dalam batas tertentu kepada kewenangan otoritas/penguasa.
+2. Menghubungkan kelompok hukuman pertama dengan penjagaan lima kebutuhan pokok yang disebutnya: agama, jiwa, akal, nasab, dan harta. **Catat sebagai penyusunan argumentasi pengarang, bukan otoritas Qira'ah memutus perkara pidana.**
+3. Menyebut perbedaan nilai hukum antara pelanggaran pokok dan pelanggaran turunan yang ditangani melalui `ta'zir`.
+4. Membatasi fokus persoalan pada keberatan masyarakat modern mengenai relevansi dan ketegasan hukuman yang menurut penulis bersumber dari nash.
+5. Mengajukan urutan pembahasan: apa saja bentuk pertentangan yang dipersepsikan, dari mana gagasan pertentangan itu berasal dan bagaimana nilainya jika diperiksa secara ilmiah, lalu jalan menjawab keberatan tersebut.
+
+**Kesimpulan audit terbatas**: sebagian motivasi penulisan sudah bersumber langsung dari teks pengarang: ia ingin menjawab keberatan tentang hukum pidana Islam di mata masyarakat modern. Ini dapat menjadi bahan paragraf pembuka ringkasan AB-007 setelah diverifikasi terhadap muqaddimah edisi PDF yang dikunci. **Belum** didapati daftar isi asli, pembahasan terperinci dan contoh dalam seluruh risalah, sehingga belum memenuhi standar menulis ringkasan per bab yang lengkap.
