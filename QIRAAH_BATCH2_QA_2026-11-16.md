@@ -54,6 +54,6 @@ Lima naskah diganti secara langsung pada `assets/books.js` dan pada fallback HTM
 - [ ] Rights: belum ada izin adaptasi/publikasi tersendiri dari pemegang hak. Edisi sumber mencantumkan hak cetak dilindungi; sebagian masih bertanda peninjauan. Tidak ada salinan PDF diterbitkan pada website.
 - [ ] Pemeriksaan manusia independen, takhrij hadis, verifikasi kutipan sejarah dan halaman karakter Arab yang rusak pada OCR.
 - [ ] Setiap subjudul kecil AD-028 dan AD-031 harus mendapat catatan isi terpisah agar memenuhi target editorial yang lebih ketat.
-- [ ] Deployment GitHub Pages dan HTTP 200 seluruh 5 URL harus dicek setelah build.
+- [x] Deployment GitHub Pages workflow run 59 **success**: https://github.com/amangkitabb-lab/QIraah/actions/runs/43869827842. Kelima URL pembaca AD-027, AD-032, AD-030, AD-028, AD-031 berhasil HTTP 200 (Firecrawl maxAge=0), memperlihatkan isi bacaan baru, daftar isi, dan estimasi **10, 10, 12, 15, 17 menit**. Dua buku panjang memiliki label status seri/parsial, cuplikan lama tidak muncul.
 
 **Definisi status:** `summaryCoverage=full` pada tiga buku pendek berarti semua **bagian pokok** telah dibuat ringkasan sesuai judul, bukan penilaian hadis dan teks filologis yang final. `summaryCoverage=partial` pada dua buku panjang menyatakan pekerjaan granular bab belum selesai. `ownerFinal=true` adalah status tampilan website dan **bukan** persetujuan hukum atau lulus reviewer manusia.
