@@ -376,7 +376,7 @@
       "segments": 3
     }
   ],
-  "status": "batch_4_AB027_private_draft_10m_not_published; batch_3_pending",
+  "status": "batch_3_active_priority_exclusive; batch_4_paused_by_owner_2026-11-17",
   "batch_1_outcome": "five original Indonesian readings committed to main, static HTML updated, five public book URLs HTTP 200 and updated duration verified",
   "batch_1_completed_at": "2026-11-16",
   "batch_1_qa_file": "QIRAAH_BATCH1_QA_2026-11-16.md",
@@ -387,7 +387,7 @@
     "AB-031",
     "AB-011"
   ],
-  "next_priority": "Finish batch3 book chapters first when sources accessible; batch4 begin by comparing AB-027 original digital TOC with actual PDF and drafting each original heading privately, then other four sources.",
+  "next_priority": "Batch3 exclusively: verify original PDF, perform per-original-subheading summaries and QA for AB-001 AB-007 AB-030 AB-031 AB-011, release only cleared texts. Batch4 forbidden until Batch3 marked passed.",
   "github_pages_workflow_success": "https://github.com/amangkitabb-lab/QIraah/actions/runs/43869827842",
   "batch_2_completed_at": "2026-11-16",
   "batch_2_outcome": "All five book URLs HTTP200 with updated text; 3 books include all original major headings; 2 long books serial source maps, partial thematic summary pending every small heading.",
@@ -399,7 +399,7 @@
     "AB-031",
     "AB-011"
   ],
-  "batch_3_phase": "source_preflight_only_not_drafted_or_published",
+  "batch_3_phase": "AB-007_private_source_anchored_draft_written; AB-001_existing_draft_QA_pending; AB-030_AB-031_AB-011_unfinished",
   "batch_3_candidate_source_audit": "QIRAAH_BATCH3_SOURCE_AUDIT_2026-11-16.md",
   "batch_3_selection_basis": "4 Archive.org PDF URLs with page counts verified from PDF metadata (35,36,49,63); AB-001 27 pages from preexisting catalogue and source-lock conflict. Not a ranking of all files in the user's PDF ZIP.",
   "batch_3_candidate_books": [
@@ -450,10 +450,10 @@
     }
   ],
   "batch_3_blockers": [
-    "Uploaded PDF ZIP exceeds Files reader size limit (449680907 B).",
-    "Uploaded Markdown ZIP materialized but container tool errors prevent inspecting contents.",
-    "Firecrawl connected credit exhausted before full PDF text extraction.",
-    "Rights for public adaptation per-edition not documented; human source audit pending."
+    "Local PDF ZIP is too large for Files backend, and container execution remains unavailable; full edition lock pending.",
+    "AB-007 Nasim al-Sham PDF has 16 numbered pages; earlier Archive.org candidate has 35 file pages; editions not confirmed identical.",
+    "AB-030, AB-031 and AB-011 full primary contents not yet independently accessible in this session.",
+    "Human subject-matter review and per-edition adaptation permissions require documentary verification before publication."
   ],
   "batch_4": [
     "AB-027",
@@ -462,7 +462,7 @@
     "AB-035",
     "KR-016"
   ],
-  "batch_4_phase": "AB-027_private_draft_written_and_source_TOC_mapped; website_label_partial_corrected; source_rights_human_QA_pending",
+  "batch_4_phase": "PAUSED_BY_OWNER_2026-11-17_until_batch_3_completed_and_verified",
   "batch_4_source_audit": "QIRAAH_BATCH4_SOURCE_AUDIT_2026-11-17.md",
   "batch_4_candidates": [
     {
@@ -559,6 +559,24 @@
       "publication_status": "not_published",
       "editorial_coverage": "11 original leaf subheadings plus standalone original conclusion, initial section mapping",
       "source_notes": "Shamela digital numbered edition; PDF edition mismatch not resolved"
+    }
+  ],
+  "active_batch": 3,
+  "batch_4_paused": true,
+  "batch_3_private_drafts": [
+    {
+      "book_id": "AB-007",
+      "private_storage": "Notion draft",
+      "private_page_id": "41b24b9125648146a968d7daca58aee8",
+      "page_title": "Qira’ah Batch 3 — Draf Privat AB-007 (PDF Resmi Nasim al-Sham)",
+      "source": "Nasim al-Sham official Arabic PDF, digital 16 pages",
+      "basis": "Independent Indonesian source-anchored narrative; not the older 35-page Archive edition",
+      "draft_word_count_including_headings": 2178,
+      "editorial_status": "draft_pre_QA",
+      "source_visual_QA": "pending",
+      "rights": "owner_claim_document_not_attached",
+      "human_review": "pending",
+      "website_publication": "not_published"
     }
   ]
 }
