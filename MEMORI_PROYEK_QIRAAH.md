@@ -111,3 +111,8 @@ GitHub Pages workflow run 38 `43862568124` sukses. Firecrawl maxAge:0 pada lima 
 - **AB-011:** masih ringkasan lama **653 kata / 4 menit, partial**; ujung sumber (hlm. ~56–63) dan TOC asli belum bisa diperiksa. **Tidak dikarang**.
 - Cache import `assets/books.js` pada semua halaman utama dan empat halaman kitab yang berubah disinkronkan ke versi `batch3-20261117-final`. Tetap perlu verifikasi workflow Pages dan URL live.
 - ZIP PDF 449MB tidak dapat diakses via Files; `container.exec` gagal ClientError; Firecrawl kredit 0. Tanpa sumber asli yang bisa diperiksa dan izin terverifikasi, tidak sah menaikkan status lima buku menjadi final. Sumber/draf mentah tidak diunggah ke repository publik. Tidak ada email berhasil dikirim.
+
+## Pembaruan sumber Arab AB-031 — Batch 3 (17 November 2026)
+- Salinan OCR Arab 26 halaman dari https://www.scribd.com/document/1065361357 dilacak dan dibandingkan dengan daftar isi resmi https://naseemalsham.com/subjects/view/54443 . Cuplikan teks substantif mendukung muqaddimah, keberatan minoritas, perubahan hukum, riba, kitab fikih lama, dan penutup. OCR bagian perempuan dan rincian lainnya belum lengkap; jangan menyulapnya menjadi bacaan `full`.
+- `AB-031` ringkasan Indonesia di `assets/books.js` diganti dari **767 kata menjadi 2.165 kata / sekitar 12 menit** dengan tujuh bagian sesuai TOC, commit `a401c2341cb4bd774c7388f6634df6ac0b3ebfb2`. Status `summaryCoverage=partial` dan audit hak/visual belum lulus.
+- Semua entry routes dan empat kitab Batch 3 diperbarui ke query data `batch3-v2-20261117` supaya artikel terbaru tidak tertahan cache. Batch 4 tetap dibekukan. Tidak ada Notion atau email dikirim.
