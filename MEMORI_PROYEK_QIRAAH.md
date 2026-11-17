@@ -1,4 +1,4 @@
-# MEMORI PROYEK QIRA'AH (status 2026-11-17)
+# MEMORI PROYEK QIRA'AH (status 2026-11-17; Batch 3 aktif)
 
 ## Repo dan sumber
 - Repository aktif: `amangkitabb-lab/QIraah` (GitHub, `main`), proyek GitHub Pages `https://amangkitabb-lab.github.io/QIraah/`. Pada 16-11-2026 konektor GitHub **berhasil mengakses repo dan memiliki izin push**. Itu bukan bukti deployment terbaru berhasil.
@@ -101,3 +101,13 @@ GitHub Pages workflow run 38 `43862568124` sukses. Firecrawl maxAge:0 pada lima 
 - AB-001: situs memiliki draft panjang 2320 kata dengan lima judul, tetapi `pdfUrl` berbeda dari `SOURCE_LOCK` di ringkasan; judul halaman Nasim al-Sham memakai tambahan `عز وجل`. AB-011: situs 653 kata dan parsial; TOC asli dan halaman terakhir masih harus dicek. AB-030/031 tetap bacaan singkat 736/641 kata; jangan dipoles menjadi 'final' tanpa sumber.
 - Sumber: `https://naseemalsham.com/uploads/Component/word%20new/Arabic/Research/2012/Al3qobat_AlIslameeh.pdf` dapat dibaca sebagai teks; permintaan screenshot PDF dengan web gagal akibat cache miss. Container tool masih gagal ClientError, ZIP 449MB melebihi batas Files. Karena itu **tidak ada klaim seluruh sumber utama sudah diaudit**.
 - Tidak ada perubahan naskah `assets/books.js` dari Batch3 pada sesi ini. Draf privat baru AB-007 belum aman dipublikasikan karena dokumentasi izin per edisi dan QA manusia masih pending. Belum ada email dikirim; alamat penerima tetap hanya di percakapan, tidak di repo publik.
+
+## Progres revisi isi langsung Batch 3 — 17 November 2026
+- Atas koreksi pemilik, aktif **Batch 3** saja; Batch 4 tetap **PAUSED**. Jangan pakai Notion untuk Qira'ah mulai sekarang, dan jangan mengirim laporan rutin sebagai pengganti naskah.
+- **AB-007:** kitab resmi Nasim al-Sham berisi 16 halaman teks Arab dibaca; naskah situs `assets/books.js` diganti dari 602 menjadi **1.999 kata / 11 menit**, cakupan `partial`, commit `5bd2562bbf143af23a28dbde454ed10e25f694cc`; ISBN/edisi 35-halaman Archive belum dicocokkan; QA manusia/hak belum selesai.
+- **AB-031:** tujuh keberatan asli dari Nasim al-Sham dibuat masing-masing heading, menghilangkan gabungan tiga masalah hukum–riba–perempuan; teks kini **767 kata / 5 menit**, `partial`, commit `eec48810e8289ef45a69294b2a9f3f5261481878`.
+- **AB-030:** prosa lama 736 kata ditata ulang di bawah **lima heading asli** dari Nasim al-Sham tanpa menambah bahasan yang belum diverifikasi; kini **802 kata / 5 menit**, `partial`, commit `45955595f23f86c89ba10dd729cc8f97e7ef7c0b`.
+- **AB-001:** tetap 5 bab inti dan **2.347 kata / 13 menit**, namun sumber PDF katalog dan `SOURCE_LOCK` berbeda. Penanda sumber dikoreksi menjadi `belum terkunci`, cakupan `partial` sambil menunggu verifikasi lembar OCR rusak, commit `6202d609c22f91207f4f39f68f8311296ef7d826`.
+- **AB-011:** masih ringkasan lama **653 kata / 4 menit, partial**; ujung sumber (hlm. ~56–63) dan TOC asli belum bisa diperiksa. **Tidak dikarang**.
+- Cache import `assets/books.js` pada semua halaman utama dan empat halaman kitab yang berubah disinkronkan ke versi `batch3-20261117-final`. Tetap perlu verifikasi workflow Pages dan URL live.
+- ZIP PDF 449MB tidak dapat diakses via Files; `container.exec` gagal ClientError; Firecrawl kredit 0. Tanpa sumber asli yang bisa diperiksa dan izin terverifikasi, tidak sah menaikkan status lima buku menjadi final. Sumber/draf mentah tidak diunggah ke repository publik. Tidak ada email berhasil dikirim.

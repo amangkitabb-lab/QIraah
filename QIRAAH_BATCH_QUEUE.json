@@ -376,7 +376,7 @@
       "segments": 3
     }
   ],
-  "status": "batch_3_active_priority_exclusive; batch_4_paused_by_owner_2026-11-17",
+  "status": "batch_3_in_progress; four_reader_revisions_committed; batch_4_paused",
   "batch_1_outcome": "five original Indonesian readings committed to main, static HTML updated, five public book URLs HTTP 200 and updated duration verified",
   "batch_1_completed_at": "2026-11-16",
   "batch_1_qa_file": "QIRAAH_BATCH1_QA_2026-11-16.md",
@@ -387,7 +387,7 @@
     "AB-031",
     "AB-011"
   ],
-  "next_priority": "Batch3 exclusively: verify original PDF, perform per-original-subheading summaries and QA for AB-001 AB-007 AB-030 AB-031 AB-011, release only cleared texts. Batch4 forbidden until Batch3 marked passed.",
+  "next_priority": "DO NOT TOUCH BATCH4 OR NOTION. Finish source-verified AB-030, AB-031, AB-011 drafts first, then full edition and rights verification for all 5. Do not mark batch3 complete from a commit alone.",
   "github_pages_workflow_success": "https://github.com/amangkitabb-lab/QIraah/actions/runs/43869827842",
   "batch_2_completed_at": "2026-11-16",
   "batch_2_outcome": "All five book URLs HTTP200 with updated text; 3 books include all original major headings; 2 long books serial source maps, partial thematic summary pending every small heading.",
@@ -399,7 +399,7 @@
     "AB-031",
     "AB-011"
   ],
-  "batch_3_phase": "AB-007_private_source_anchored_draft_written; AB-001_existing_draft_QA_pending; AB-030_AB-031_AB-011_unfinished",
+  "batch_3_phase": "AB-007 substantive 1999w, AB-030 original five-section map 802w, AB-031 seven objections 767w, AB-001 source correction 2347w; AB-011 653w partial; all source and rights QA still open",
   "batch_3_candidate_source_audit": "QIRAAH_BATCH3_SOURCE_AUDIT_2026-11-16.md",
   "batch_3_selection_basis": "4 Archive.org PDF URLs with page counts verified from PDF metadata (35,36,49,63); AB-001 27 pages from preexisting catalogue and source-lock conflict. Not a ranking of all files in the user's PDF ZIP.",
   "batch_3_candidate_books": [
@@ -563,20 +563,53 @@
   ],
   "active_batch": 3,
   "batch_4_paused": true,
-  "batch_3_private_drafts": [
+  "batch_3_public_updates": [
+    {
+      "book_id": "AB-001",
+      "word_count": 2347,
+      "minutes": 13,
+      "coverage": "partial",
+      "status": "Existing five-section draft; corrected conflicting PDF source lock; visual check needed",
+      "commit": "6202d609c22f91207f4f39f68f8311296ef7d826"
+    },
     {
       "book_id": "AB-007",
-      "private_storage": "Notion draft",
-      "private_page_id": "41b24b9125648146a968d7daca58aee8",
-      "page_title": "Qira’ah Batch 3 — Draf Privat AB-007 (PDF Resmi Nasim al-Sham)",
-      "source": "Nasim al-Sham official Arabic PDF, digital 16 pages",
-      "basis": "Independent Indonesian source-anchored narrative; not the older 35-page Archive edition",
-      "draft_word_count_including_headings": 2178,
-      "editorial_status": "draft_pre_QA",
-      "source_visual_QA": "pending",
-      "rights": "owner_claim_document_not_attached",
-      "human_review": "pending",
-      "website_publication": "not_published"
+      "word_count": 1999,
+      "minutes": 11,
+      "coverage": "partial",
+      "status": "New substantive Indonesian reading from official 16-page Nasim al-Sham Arabic PDF; edition/visual/rights check pending",
+      "commit": "5bd2562bbf143af23a28dbde454ed10e25f694cc"
+    },
+    {
+      "book_id": "AB-030",
+      "word_count": 802,
+      "minutes": 5,
+      "coverage": "partial",
+      "status": "Rearranged older prose under five original author headings; no claim full primary text checked",
+      "commit": "45955595f23f86c89ba10dd729cc8f97e7ef7c0b"
+    },
+    {
+      "book_id": "AB-031",
+      "word_count": 767,
+      "minutes": 5,
+      "coverage": "partial",
+      "status": "Seven original objections split into seven reader sections; full source evidence still missing",
+      "commit": "eec48810e8289ef45a69294b2a9f3f5261481878"
+    },
+    {
+      "book_id": "AB-011",
+      "word_count": 653,
+      "minutes": 4,
+      "coverage": "partial",
+      "status": "Existing historical critique remains incomplete; late text not verified, no invented fill"
     }
+  ],
+  "batch_3_open_gates": [
+    "AB-001 OCR page 12 / edition and two URL comparison",
+    "AB-007 crosscheck official 16-page vs archive 35-page edition and visual PDF QA",
+    "AB-030 entire primary PDF body and section-specific anchors missing",
+    "AB-031 entire primary PDF body and per-syubhat detailed source notes missing",
+    "AB-011 complete 63-page text, last pages and original TOC missing",
+    "Permissions/adaptation rights and independent specialist QA not documented"
   ]
 }
