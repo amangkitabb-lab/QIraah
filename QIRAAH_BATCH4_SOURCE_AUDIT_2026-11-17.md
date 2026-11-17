@@ -81,3 +81,15 @@ Pengarang menyebut adanya perubahan situasi intelektual dan minat generasi muda 
 **Keputusan:** menyimpan **audit administratif** ini aman dalam repo publik, tetapi **tidak** menyimpan halaman PDF/MD, catatan izin pribadi, atau draft panjang yang belum lolos hak. Batasi klaim: Batch 4 mulai ditelusuri, **belum ada naskah batch 4 yang selesai diterbitkan**. Batch 3 masih terbuka.
 
 Rujukan proyek: [Memori](./MEMORI_PROYEK_QIRAAH.md) · [Antrean](./QIRAAH_BATCH_QUEUE.json) · [Audit Batch 3](./QIRAAH_BATCH3_SOURCE_AUDIT_2026-11-16.md)
+
+## F. Koreksi metadata publik selama Batch 4 (17-11-2026)
+**Bukti commit:** [`be02ad4`](https://github.com/amangkitabb-lab/QIraah/commit/be02ad436eb7f7608647f3bf89d67b24be113ec6).
+
+Karena `AB-027` di website hanya memiliki lima heading besar sementara daftar isi sumber digital memuat subjudul spesifik yang belum diwakili sebagai heading mandiri sesuai SOP terbaru pemilik, **`summaryCoverage` untuk AB-027 diganti `full` → `partial`**. Ini adalah koreksi label **cakupan editorial**, bukan revisi isi kitab atau klaim bahwa isi sumber baru telah lengkap.
+- 85 buku tetap ada; judul, sampul, urutan, `summaryMd` AB-027 **1.992 kata** dan `readMinutes=11` tidak berubah.
+- `sourceQc` dan `contentQc` tetap `pending`; status `rights` tetap `audit`.
+- Reader kini dirancang menampilkan label **Seri ringkasan tersedia** dan penjelasan cakupan belum lengkap dari logika `assets/app.js`.
+- Versi muatan `assets/books.js` pada `index.html`, `ringkasan/index.html`, `jelajahi/index.html`, `rak/index.html`, `kitab/AB-027/index.html`, dan `tentang/index.html` dinaikkan ke `b4-20261117` demi menghindari cache data lama.
+- **Status verifikasi:** perubahan di repository dan enam URL sumber halaman diverifikasi lewat API GitHub; status GitHub Pages/deployment dan tampilan live harus diuji lagi. Uji visual HP/audio belum dilakukan.
+
+Semua tabel di atas yang menyebut `AB-027` sebagai `full` adalah **snapshot SEBELUM koreksi ini**, bukan kondisi yang berlaku sesudah commit.
