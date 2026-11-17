@@ -376,7 +376,7 @@
       "segments": 3
     }
   ],
-  "status": "batch_4_metadata_QA_change_committed; full_chapter_work_and_batch_3_still_pending",
+  "status": "batch_4_AB027_private_draft_10m_not_published; batch_3_pending",
   "batch_1_outcome": "five original Indonesian readings committed to main, static HTML updated, five public book URLs HTTP 200 and updated duration verified",
   "batch_1_completed_at": "2026-11-16",
   "batch_1_qa_file": "QIRAAH_BATCH1_QA_2026-11-16.md",
@@ -462,7 +462,7 @@
     "AB-035",
     "KR-016"
   ],
-  "batch_4_phase": "AB-027_original_TOC_mapped_and_public_coverage_label_corrected_to_partial; no_new_summary_added",
+  "batch_4_phase": "AB-027_private_draft_written_and_source_TOC_mapped; website_label_partial_corrected; source_rights_human_QA_pending",
   "batch_4_source_audit": "QIRAAH_BATCH4_SOURCE_AUDIT_2026-11-17.md",
   "batch_4_candidates": [
     {
@@ -546,5 +546,19 @@
       "commit": "be02ad436eb7f7608647f3bf89d67b24be113ec6"
     }
   ],
-  "batch_4_next_action": "Trace every AB-027 original section in complete PDF/digital book, prepare separate summary paragraphs and edition-rights QA; do not claim full until passed."
+  "batch_4_next_action": "Trace every AB-027 original section in complete PDF/digital book, prepare separate summary paragraphs and edition-rights QA; do not claim full until passed.",
+  "batch_4_private_drafts": [
+    {
+      "book_id": "AB-027",
+      "storage": "Notion private draft, not GitHub public",
+      "title": "Qira’ah Batch 4 — Draf Privat AB-027 (Audit Sumber Belum Final)",
+      "main_narrative_words": 1719,
+      "estimated_read_minutes": 10,
+      "word_count_rule": "Main body paragraphs only, excluding titles/meta/source links/audit checklist, ceil(words/190)",
+      "status": "preliminary_not_source_qc_complete",
+      "publication_status": "not_published",
+      "editorial_coverage": "11 original leaf subheadings plus standalone original conclusion, initial section mapping",
+      "source_notes": "Shamela digital numbered edition; PDF edition mismatch not resolved"
+    }
+  ]
 }
