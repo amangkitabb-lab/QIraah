@@ -93,3 +93,10 @@ Karena `AB-027` di website hanya memiliki lima heading besar sementara daftar is
 - **Status verifikasi:** perubahan di repository dan enam URL sumber halaman diverifikasi lewat API GitHub; status GitHub Pages/deployment dan tampilan live harus diuji lagi. Uji visual HP/audio belum dilakukan.
 
 Semua tabel di atas yang menyebut `AB-027` sebagai `full` adalah **snapshot SEBELUM koreksi ini**, bukan kondisi yang berlaku sesudah commit.
+
+## G. Draf editorial privat AB-027 (17 November 2026)
+- Draf bahasa Indonesia **disimpan di Notion sebagai halaman privat/draft**, bukan halaman website atau berkas dalam repo publik. Judul halaman: `Qira’ah Batch 4 — Draf Privat AB-027 (Audit Sumber Belum Final)`. Link privat tidak ditulis di repo publik.
+- Pemeriksaan baca-balik Notion berhasil. Konten dokumen memiliki **6 heading besar** (termasuk pengantar) dan **11 subheading isi**; pembahasan penutup merupakan heading besar terakhir tersendiri. Dengan demikian naskah berusaha mengikuti **12 bagian isi** di samping muqaddimah, bukan lima kelompok besar saja.
+- Penghitungan kata dari **narasi utama** antara heading muqaddimah dan catatan audit (tanpa metadata, judul heading, tautan sumber, dan checklist): **1.719 kata**, setara kira-kira **10 menit** jika pembulatan `Math.ceil(kata/190)`. Durasi ini adalah **draf**, bukan menit yang diumumkan pada website.
+- Isinya mengacu pada cuplikan teks sumber digital di Shamela yang bisa dibaca (antara lain nomor 1,3,5,6,7,8,10,11,13,14,16,18,21,22,23,25,26), dengan tautan sumber per bagian. Beberapa halaman digital masih belum terbaca atau tidak lengkap, sehingga klaim kelengkapan sumber belum memenuhi standar `source_qc=passed`.
+- **Tidak diterbitkan di `assets/books.js`**. Teks website AB-027 tetap 1.992 kata lama / ±11 menit dan label `partial`. Draf memerlukan pencocokan PDF, pemeriksaan materi fikih sensitif, izin publikasi per edisi, dan review manusia.
