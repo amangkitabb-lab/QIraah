@@ -376,7 +376,7 @@
       "segments": 3
     }
   ],
-  "status": "batch_4_source_mapping_partial; batch_3_pending; no_batch_4_content_deployment",
+  "status": "batch_4_metadata_QA_change_committed; full_chapter_work_and_batch_3_still_pending",
   "batch_1_outcome": "five original Indonesian readings committed to main, static HTML updated, five public book URLs HTTP 200 and updated duration verified",
   "batch_1_completed_at": "2026-11-16",
   "batch_1_qa_file": "QIRAAH_BATCH1_QA_2026-11-16.md",
@@ -462,7 +462,7 @@
     "AB-035",
     "KR-016"
   ],
-  "batch_4_phase": "source_metadata_verified_and_AB-027_digital_toc_mapped; no_new_summaries_published",
+  "batch_4_phase": "AB-027_original_TOC_mapped_and_public_coverage_label_corrected_to_partial; no_new_summary_added",
   "batch_4_source_audit": "QIRAAH_BATCH4_SOURCE_AUDIT_2026-11-17.md",
   "batch_4_candidates": [
     {
@@ -476,9 +476,12 @@
       "original_group_count": 5,
       "original_subheading_count": 12,
       "site_existing_summary_words": 1992,
-      "site_coverage": "full",
+      "site_coverage": "partial",
       "source_status": "publisher_preface_and_shamela_toc+selected_pages_read; PDF_original_unverified",
-      "rights_status": "audit"
+      "rights_status": "audit",
+      "site_status_updated_at": "2026-11-17",
+      "site_status_commit": "be02ad436eb7f7608647f3bf89d67b24be113ec6",
+      "site_summary_unchanged": true
     },
     {
       "book_id": "AB-036",
@@ -531,5 +534,17 @@
     "A digital Shamela source for AB-027 is auto-paginated; PDF edition lock and OCR per-edition not verified",
     "Full primary texts for the other four candidates not yet read",
     "Rights permission per edition and human QC not independently evidenced"
-  ]
+  ],
+  "batch_4_changes": [
+    {
+      "book_id": "AB-027",
+      "field": "summaryCoverage",
+      "from": "full",
+      "to": "partial",
+      "content_change": false,
+      "reader_script_cache": "b4-20261117",
+      "commit": "be02ad436eb7f7608647f3bf89d67b24be113ec6"
+    }
+  ],
+  "batch_4_next_action": "Trace every AB-027 original section in complete PDF/digital book, prepare separate summary paragraphs and edition-rights QA; do not claim full until passed."
 }
