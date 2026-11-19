@@ -128,3 +128,8 @@ GitHub Pages workflow run 38 `43862568124` sukses. Firecrawl maxAge:0 pada lima 
 
 ### Penyimpanan final gambar terpilih — 19 November 2026
 - Semua 45 PNG asli telah dicek di branch GitHub (46 item termasuk README). Untuk 25 ID yang membutuhkan cover baru, file asli disalin melalui SHA blob Git tanpa rekode ke `assets/covers/<BOOK_ID>-qiraah.png` dan path di `assets/books.js` diperbarui. Cover AB-001 yang ada tetap dipakai. Semua 45 screenshot tetap ada di `assets/covers/inbox/` untuk jejak sumber serta judul yang belum dipakai. Hak tampil sampul masih ditandai pending secara metadata; jangan mengklaim ada lisensi tertulis yang belum diverifikasi.
+
+## Rilis cover al-Buthi terverifikasi — 19 November 2026
+- PR #1 telah **merged** sebagai `d962a0b4d537edab4f91ede5cba74049da6bbd9a`; GitHub Pages workflow `44491830404` **success** dan browser QA menemukan 26 sampul tampil pada Jelajahi, 12 kartu pada beranda, pencarian AB-007 tepat (1 hasil), tanpa broken image. Sumber QA rinci: [QIRAAH_COVER_RELEASE_QA_2026-11-19.md](./QIRAAH_COVER_RELEASE_QA_2026-11-19.md).
+- 26 al-Buthi mendapat gambar sampul/halaman judul (25 file baru + 1 lama), 45 PNG asli tetap di inbox. 85 entri beserta semua `summaryMd` tetap utuh; 59 al-Adni tersembunyi dari katalog fokus tetapi masih ada dalam data. Daftar ringkasan hanya disembunyikan dari UI dan fallback HTML; tidak ada penghapusan naskah.
+- Hak reproduksi cover `pending`; belum diuji HP, audio, dan seluruh detail kitab. Jangan mengulang tugas cover untuk 26 ID ini jika tidak ada bukti regresi. Selanjutnya selesaikan Batch 3, bukan Batch 4. Tidak ada pengiriman email yang diklaim.
