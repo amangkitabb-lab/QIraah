@@ -1,0 +1,34 @@
+name: QA al-Buthi covers
+
+on:
+  push:
+    branches:
+      - qiraah/bouthi-catalog-covers-20261117
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'assets/books.js'
+      - 'assets/app.js'
+      - 'assets/covers/**'
+      - 'QIRAAH_COVER_IMPORT_BOUTHI.json'
+      - 'scripts/qa_bouthi_covers.cjs'
+
+permissions:
+  contents: read
+
+jobs:
+  check-cover-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full source and main comparison
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/books.js
+          node --check assets/app.js
+          node --check scripts/qa_bouthi_covers.cjs
+      - name: Verify exact uploaded cover references and unchanged summaries
+        run: node scripts/qa_bouthi_covers.cjs
