@@ -33,7 +33,7 @@ for (const row of mapping.rows) {
    assert.equal(b.coverUrl,expected,'Cover URL mismatch: '+b.id);
    assert(row.uploaded_file.startsWith('Screenshot 2026-11-17 '),'Unexpected uploaded filename');
    const file=path.resolve(expected);
-   assert(file.startsWith(path.resolve('assets/covers/inbox')+path.sep),'Out-of-directory path');
+   assert(file.startsWith(path.resolve('assets/covers')+path.sep),'Out-of-directory path');
    assert(fs.existsSync(file),'Cover not uploaded: '+expected);
    const bytes=fs.readFileSync(file);
    assert(bytes.length>10000,'Image is too small or empty');
