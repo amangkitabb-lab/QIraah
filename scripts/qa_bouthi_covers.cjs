@@ -61,4 +61,20 @@ assert(app.includes('function bouthiHome()')&&app.includes('function bouthiCatal
 assert(app.includes("function summariesPage(){if(QIRAAH_BOUTHI_FOCUS)return bouthiCatalog();"),'Summary route must be hidden without deletion');
 assert(app.includes('safeImageLink(raw)'),'Image safety handler missing');
 assert(!app.includes('navLink(\'#/ringkasan\',REVIEW_MODE?'),'Summary navigation still shown');
+const version='bouthi-covers-20261119';
+const routes=['index.html','jelajahi/index.html','ringkasan/index.html','rak/index.html','kamus/index.html','tentang/index.html',
+ ...actual.filter(b=>b.group==='Al-Buthi').map(b=>'kitab/'+b.id+'/index.html')];
+assert.equal(routes.length,32);
+for(const route of routes){
+ const html=read(route);
+ assert(html.includes('assets/books.js?v='+version),'Stale books.js query in '+route);
+ assert(html.includes('assets/app.js?v='+version),'Stale app.js query in '+route);
+}
+for(const route of ['index.html','jelajahi/index.html']){
+ const html=read(route);
+ assert.equal((html.match(/<article class="book-card">/g)||[]).length,26,'Static catalog must list 26 al-Buthi covers: '+route);
+ assert(!html.includes('Habib Abu Bakar al-Adni'),'Static fallback should focus on al-Buthi: '+route);
+}
+const ringkasan=read('ringkasan/index.html');
+assert(!ringkasan.includes('<li>')&&!ringkasan.includes('70 ringkasan disetujui'),'Static summary list is still present');
 console.log('PASS: 45/45 PNGs, 26 al-Buthi titles, 25 newly linked covers, 85 records and all summaries preserved.');
