@@ -3,16 +3,16 @@
   "date": "2026-11-17",
   "catalog_source": "assets/books.js",
   "image_source": "User-supplied ChatGPT screenshots; filename matched via visual read",
-  "upload_directory": "assets/covers/inbox/",
+  "upload_directory": "assets/covers/",
   "total_books": 26,
   "covers_new_needed": 25,
   "existing_cover_preserved": 1,
   "steps": [
-    "Open this PR branch and upload all 45 original Screenshot PNG files unchanged into assets/covers/inbox/ in a single GitHub web upload.",
-    "The 25 missing book coverUrl values already point directly to those filenames; keep AB-001's existing cover.",
-    "Verify each uploaded filename, image rendering, source page kind and cover rights; do not merge until all 25 resolve successfully.",
-    "Smoke test /QIraah/ main, catalogue, direct book, mobile, and check no loss of summaryMd or 59 al-Adni records.",
-    "After QA, merge draft PR to main; verify GitHub Pages deployment and the live site."
+    "All 45 original PNG screenshots were uploaded to assets/covers/inbox/.",
+    "25 catalog image files were created under assets/covers/<BOOK_ID>-qiraah.png with the exact same Git blob SHA (no re-encoding).",
+    "AB-001 original cover is preserved; its separate uploaded screenshot is kept in the inbox.",
+    "Cover display-rights metadata remains pending; owner to retain documentation.",
+    "QA covers and site routes, then merge PR and verify GitHub Pages."
   ],
   "rows": [
     {
@@ -30,277 +30,302 @@
       "book_id": "AB-003",
       "title_ar": "الإسلام والعصر تحديات وآفاق حوار بين البوطي وطيب تيزيني",
       "uploaded_file": "Screenshot 2026-11-17 131716.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131716.png",
+      "required_destination": "assets/covers/AB-003-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131716.png"
     },
     {
       "book_id": "AB-007",
       "title_ar": "العقوبات الإسلامية وعقدة التناقض بينها وبين ما يسمى بطبيعة العصر",
       "uploaded_file": "Screenshot 2026-11-17 132044.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 132044.png",
+      "required_destination": "assets/covers/AB-007-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 132044.png"
     },
     {
       "book_id": "KR-011",
       "title_ar": "اللامذهبية أخطر بدعة تهدد الشريعة الإسلامية",
       "uploaded_file": "Screenshot 2026-11-17 131816.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131816.png",
+      "required_destination": "assets/covers/KR-011-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131816.png"
     },
     {
       "book_id": "AB-010",
       "title_ar": "حرية الإنسان في ظل عبوديته لله",
       "uploaded_file": "Screenshot 2026-11-17 131831.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131831.png",
+      "required_destination": "assets/covers/AB-010-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131831.png"
     },
     {
       "book_id": "AB-011",
       "title_ar": "دفاع عن الإسلام والتاريخ",
       "uploaded_file": "Screenshot 2026-11-17 131602.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131602.png",
+      "required_destination": "assets/covers/AB-011-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131602.png"
     },
     {
       "book_id": "AB-013",
       "title_ar": "ضوابط المصلحة في الشريعة الإسلامية",
       "uploaded_file": "Screenshot 2026-11-17 131613.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131613.png",
+      "required_destination": "assets/covers/AB-013-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131613.png"
     },
     {
       "book_id": "KR-029",
       "title_ar": "كبرى اليقينيات الكونية",
       "uploaded_file": "Screenshot 2026-11-17 131905.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131905.png",
+      "required_destination": "assets/covers/KR-029-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131905.png"
     },
     {
       "book_id": "KR-015",
       "title_ar": "لا يأتيه الباطل",
       "uploaded_file": "Screenshot 2026-11-17 131625.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131625.png",
+      "required_destination": "assets/covers/KR-015-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131625.png"
     },
     {
       "book_id": "KR-005",
       "title_ar": "محاضرات في الفقه المقارن",
       "uploaded_file": "Screenshot 2026-11-17 131919.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131919.png",
+      "required_destination": "assets/covers/KR-005-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131919.png"
     },
     {
       "book_id": "AB-018",
       "title_ar": "من سنن الله في عباده",
       "uploaded_file": "Screenshot 2026-11-17 131928.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131928.png",
+      "required_destination": "assets/covers/AB-018-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131928.png"
     },
     {
       "book_id": "KR-018",
       "title_ar": "نقض أوهام المادية الجدلية",
       "uploaded_file": "Screenshot 2026-11-17 131701.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131701.png",
+      "required_destination": "assets/covers/KR-018-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131701.png"
     },
     {
       "book_id": "KR-004",
       "title_ar": "هذا والدي",
       "uploaded_file": "Screenshot 2026-11-17 131940.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131940.png",
+      "required_destination": "assets/covers/KR-004-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131940.png"
     },
     {
       "book_id": "KR-003",
       "title_ar": "هذه مشكلاتهم",
       "uploaded_file": "Screenshot 2026-11-17 131949.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131949.png",
+      "required_destination": "assets/covers/KR-003-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131949.png"
     },
     {
       "book_id": "KR-024",
       "title_ar": "المذاهب التوحيدية والفلسفات المعاصرة",
       "uploaded_file": "Screenshot 2026-11-17 132053.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 132053.png",
+      "required_destination": "assets/covers/KR-024-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 132053.png"
     },
     {
       "book_id": "AB-027",
       "title_ar": "هكذا فلندع إلى الإسلام",
       "uploaded_file": "Screenshot 2026-11-17 132006.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 132006.png",
+      "required_destination": "assets/covers/AB-027-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 132006.png"
     },
     {
       "book_id": "KR-002",
       "title_ar": "هذه مشكلاتنا",
       "uploaded_file": "Screenshot 2026-11-17 132020.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 132020.png",
+      "required_destination": "assets/covers/KR-002-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 132020.png"
     },
     {
       "book_id": "AB-030",
       "title_ar": "العناية بالعبادات أساس لا بد منه لتثبيت المجتمع الإسلامي",
       "uploaded_file": "Screenshot 2026-11-17 131759.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131759.png",
+      "required_destination": "assets/covers/AB-030-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131759.png"
     },
     {
       "book_id": "AB-031",
       "title_ar": "مجمل الشبهات التي تثار حول تطبيق الشريعة الإسلامية في العصر الحديث",
       "uploaded_file": "Screenshot 2026-11-17 132120.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 132120.png",
+      "required_destination": "assets/covers/AB-031-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 132120.png"
     },
     {
       "book_id": "AB-032",
       "title_ar": "مشورات اجتماعية",
       "uploaded_file": "Screenshot 2026-11-17 131649.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131649.png",
+      "required_destination": "assets/covers/AB-032-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131649.png"
     },
     {
       "book_id": "KR-022",
       "title_ar": "تحديد النسل بالأسباب الوقائية في الميزان الاجتماعي",
       "uploaded_file": "Screenshot 2026-11-17 131639.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131639.png",
+      "required_destination": "assets/covers/KR-022-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131639.png"
     },
     {
       "book_id": "AB-035",
       "title_ar": "مدخل إلى فهم الجذور: من أنا ولماذا وإلى أين",
       "uploaded_file": "Screenshot 2026-11-17 132131.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 132131.png",
+      "required_destination": "assets/covers/AB-035-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 132131.png"
     },
     {
       "book_id": "AB-036",
       "title_ar": "أوربة من التقنية إلى الروحانية",
       "uploaded_file": "Screenshot 2026-11-17 131551.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131551.png",
+      "required_destination": "assets/covers/AB-036-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131551.png"
     },
     {
       "book_id": "KR-014",
       "title_ar": "المرأة بين طغيان النظام الغربي ولطائف التشريع الرباني",
       "uploaded_file": "Screenshot 2026-11-17 131538.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131538.png",
+      "required_destination": "assets/covers/KR-014-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131538.png"
     },
     {
       "book_id": "KR-023",
       "title_ar": "قضايا ساخنة",
       "uploaded_file": "Screenshot 2026-11-17 131855.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 131855.png",
+      "required_destination": "assets/covers/KR-023-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 131855.png"
     },
     {
       "book_id": "KR-016",
       "title_ar": "عائشة أم المؤمنين رضي الله عنها",
       "uploaded_file": "Screenshot 2026-11-17 132103.png",
-      "required_destination": "assets/covers/inbox/Screenshot 2026-11-17 132103.png",
+      "required_destination": "assets/covers/KR-016-qiraah.png",
       "action": "import_png",
       "existing_cover": null,
       "needs_source_image_rights_check": true,
       "code_mapped": true,
-      "binary_uploaded": false
+      "binary_uploaded": true,
+      "archived_original": "assets/covers/inbox/Screenshot 2026-11-17 132103.png"
     }
   ],
-  "status": "25_cover_paths_prepared_in_assets_books_js_binary_files_not_yet_uploaded"
+  "status": "all_25_book_covers_stored_with_stable_ids; 45_original_pngs_retained_for_provenance"
 }

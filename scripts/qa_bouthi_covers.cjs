@@ -29,7 +29,7 @@ for (const row of mapping.rows) {
    assert.equal(b.coverUrl,baseById.get(b.id).coverUrl,'Existing cover changed');
  } else {
    newCovers++;
-   const expected='assets/covers/inbox/'+row.uploaded_file;
+   const expected='assets/covers/'+b.id+'-qiraah.png';
    assert.equal(b.coverUrl,expected,'Cover URL mismatch: '+b.id);
    assert(row.uploaded_file.startsWith('Screenshot 2026-11-17 '),'Unexpected uploaded filename');
    const file=path.resolve(expected);
@@ -38,6 +38,8 @@ for (const row of mapping.rows) {
    const bytes=fs.readFileSync(file);
    assert(bytes.length>10000,'Image is too small or empty');
    assert.equal(bytes.subarray(0,8).toString('hex'),'89504e470d0a1a0a','Not a PNG: '+expected);
+   const original=fs.readFileSync(path.join('assets/covers/inbox',row.uploaded_file));
+   assert(bytes.equals(original),'Selected cover differs from uploaded PNG: '+expected);
    assert(bytes.readUInt32BE(16)>=100&&bytes.readUInt32BE(20)>=100,'Invalid dimensions: '+expected);
    assert.equal(b.coverRightsStatus,'pending','Do not falsely mark cover rights verified');
  }
