@@ -1,0 +1,3 @@
+interface:
+  display_name: "Qira’ah Integrity Operator"
+  short_description: "Audit PDF/MD dan jaga mutu ringkasan serta website Qira’ah."
