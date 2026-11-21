@@ -1,4 +1,6 @@
 # Qira'ah — Protokol Produksi Ringkasan Berbasis PDF
+> **PENGGANTI SOP (21 November 2026):** [Aturan wajib Qira'ah v1](.github/skills/qiraah-integrity-operator/references/QIRAAH_RULES.md) adalah ketentuan terbaru pemilik. Instruksi default **5 kitab per batch**, penulisan tiap subjudul kecil sebagai heading utama, serta pengecualian durasi nazam otomatis yang tertulis di dokumen 16 November ini adalah **arsip prosedur lama**, bukan aturan aktif bila bertentangan dengan versi baru. Utamakan **satu kitab sampai selesai**, **bab besar sumber**, **10–15 menit**, pengecualian eksplisit per ID, **cover dan tautan terverifikasi sebelum publikasi**, perlindungan naskah dan kata-kata UI. Mulai dengan [audit status sumber 21 November](docs/qiraah/AUDIT_PDF_MD_KATALOG_2026-11-21.md). Pembatasan ZIP 450 MB masih belum teratasi; jangan klaim semua PDF sudah terbaca.
+
 Terakhir diperbarui: 2026-11-16. Status: prosedur produksi dan antrean; **bukan** bukti bahwa naskah sudah lolos QA atau telah terbit.
 
 ## Tujuan
