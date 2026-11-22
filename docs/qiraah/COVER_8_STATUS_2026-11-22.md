@@ -31,3 +31,6 @@
 
 ## Hak dan keputusan publikasi
 Perintah pemilik proyek untuk menampilkan screenshot dicatat sebagai **instruksi pengguna**, bukan lisensi pihak ketiga secara hukum. Sampul ditambahkan hanya pada cabang review GitHub; jangan merge sampai hak reproduksi dan pemeriksaan ulang selesai. Draf narasi 10 menit tetap privat sampai source QC, content QC, dan tinjauan manusia selesai.
+
+## Pemeriksaan fallback halaman kitab
+- `kitab/AD-040/index.html`, `kitab/AD-041/index.html`, dan `kitab/AD-062/index.html` pada cabang review sudah diberi tag gambar `<img>` langsung dengan path relatif `../../assets/covers/...`, serta teks eksplisit **ringkasan 10–15 menit belum siap diterbitkan**. Hal ini mencegah laman HTML tanpa JavaScript menyatakan ringkasan penuh sudah siap.
