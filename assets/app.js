@@ -71,7 +71,7 @@ let searchTerm='',genreFilter='Semua',authorFilter='Semua',progressFilter='Semua
 const genres=['Semua','Akidah','Al-Quran','Adab & Tazkiyah','Pemikiran Islam','Tasawuf','Riwayah & Sastra','Sirah & Biografi','Pendidikan','Fikih'];
 const phase1=(b)=>Number(b.phase)===1;
 const publicationGate=(b)=>!!(b&&b.published&&b.editorialStatus==='terbit'&&b.rights==='cleared'&&String(b.rightsEvidence||'').trim()&&b.sourceQc==='passed'&&b.contentQc==='passed'&&b.humanApproval===true&&String(b.sourceUrl||'').trim()&&['full','partial'].includes(b.summaryCoverage)&&String(b.summaryMd||'').trim().length>=300);
-const QIRAAH_10PDF_PENDING=new Set(['AD-039','AD-040','AD-041','AD-042','AD-060','AD-061','AD-062','AD-063']);
+const QIRAAH_10PDF_PENDING=new Set(['AD-039','AD-042','AD-060','AD-061','AD-063']); // Remaining books lack approved 10–15 minute reading editions.
 const isBookReady=(b)=>!!(b&&(QIRAAH_10PDF_PENDING.has(b.id)?publicationGate(b):(publicationGate(b)||!!(b.ownerFinal===true&&String(b.summaryMd||'').trim().length>300))));
 const getBook=(id)=>books.find(b=>b.id===id);
 const full=(b)=>b&&isBookReady(b);
