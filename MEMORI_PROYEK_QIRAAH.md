@@ -170,3 +170,10 @@ GitHub Pages workflow run 38 `43862568124` sukses. Firecrawl maxAge:0 pada lima 
 - Dokumentasi lengkap `docs/qiraah/COVER_8_STATUS_2026-11-22.md` di cabang review; **STOP_RELEASE** ringkasan dan sampul ke `main` sampai hak serta approval terverifikasi. Katalog/artefak lama tidak dihapus.
 
 - **Tindak lanjut cover 22 November 2026:** fallback HTML `kitab/AD-040/index.html`, `kitab/AD-041/index.html`, dan `kitab/AD-062/index.html` ditambah elemen `<img>` cover dan label belum siap, khusus di PR #3; belum merge/deploy.
+
+### Keputusan owner ACC dan perintah rilis, 22 November 2026
+- **Instruksi terakhir pemilik:** “aku anggap sdh acc dan sdh ku edit dan baca tampilkan live skrg semuanya ya”. Artinya ACC editorial naskah bacaan yang **memang sudah ada** (AD-040, AD-041, AD-062), **tidak** berarti lima judul yang belum punya artikel dinyatakan selesai.
+- Tiga `summaryMd` baru dari dokumen privat disalin ke `assets/books.js` dengan bagian peta sumber privat dilepas; AD-040 ±10m, AD-041 ±11m, AD-062 ±11m; `summaryCoverage=partial`, `ownerFinal=true`, `humanApproval=true`, `published=true`. `rights=audit` secara sengaja **tetap**; izin pihak ketiga belum terverifikasi. Lihat `docs/qiraah/RILIS_ACC_PEMILIK_2026-11-22.md`.
+- `assets/app.js`: `QIRAAH_10PDF_PENDING` disempitkan menjadi `AD-039/042/060/061/063`; ketiga artikel ACC muncul dalam pembaca situs. `QIRAAH_BOUTHI_FOCUS=false` untuk dua pengarang pada cabang rilis.
+- Fallback HTML `kitab/AD-040`, `AD-041`, `AD-062` kini menampilkan sampul nyata dan link menuju pembaca `#/baca/<id>`, dengan durasi akurat.
+- Workflow CI lama masih dirancang untuk 85 kitab dan fokus al-Buthi; dibuat `scripts/qa_qiraah_10pdf_live.cjs` dan pemilihan tes sesuai branch di `.github/workflows/qa-bouthi-covers.yml`. Tes CI serta merge/deploy harus diverifikasi, jangan klaim live sebelum sukses.
