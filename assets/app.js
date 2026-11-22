@@ -18,7 +18,7 @@ let siteConfig={...SITE_DEFAULTS,...loadJson(SITE_KEY,{})};
 const SEED=(Array.isArray(window.QIRAAH_SEED)?window.QIRAAH_SEED:[]).filter(b=>b.group==='Al-Buthi'||b.group==='Al-Adni');
 const REVIEW_MODE=window.QIRAAH_REVIEW_MODE===true;
 // Temporary presentation mode: focus on al-Buthi. Catalog and summaries remain in books.js.
-const QIRAAH_BOUTHI_FOCUS=true;
+const QIRAAH_BOUTHI_FOCUS=false;
 const REVIEW_DRAFTS=REVIEW_MODE?(window.QIRAAH_EDITORIAL_DRAFTS||{}):{};
 const draftFor=id=>REVIEW_MODE?REVIEW_DRAFTS[id]:null;
 const $=(q)=>document.querySelector(q);
@@ -71,7 +71,8 @@ let searchTerm='',genreFilter='Semua',authorFilter='Semua',progressFilter='Semua
 const genres=['Semua','Akidah','Al-Quran','Adab & Tazkiyah','Pemikiran Islam','Tasawuf','Riwayah & Sastra','Sirah & Biografi','Pendidikan','Fikih'];
 const phase1=(b)=>Number(b.phase)===1;
 const publicationGate=(b)=>!!(b&&b.published&&b.editorialStatus==='terbit'&&b.rights==='cleared'&&String(b.rightsEvidence||'').trim()&&b.sourceQc==='passed'&&b.contentQc==='passed'&&b.humanApproval===true&&String(b.sourceUrl||'').trim()&&['full','partial'].includes(b.summaryCoverage)&&String(b.summaryMd||'').trim().length>=300);
-const isBookReady=(b)=>publicationGate(b)||!!(b&&b.ownerFinal===true&&String(b.summaryMd||'').trim().length>300);
+const QIRAAH_10PDF_PENDING=new Set(['AD-039','AD-042','AD-060','AD-061','AD-063']); // Remaining books lack approved 10–15 minute reading editions.
+const isBookReady=(b)=>!!(b&&(QIRAAH_10PDF_PENDING.has(b.id)?publicationGate(b):(publicationGate(b)||!!(b.ownerFinal===true&&String(b.summaryMd||'').trim().length>300))));
 const getBook=(id)=>books.find(b=>b.id===id);
 const full=(b)=>b&&isBookReady(b);
 const staged=(b)=>!!(REVIEW_MODE&&b&&draftFor(b.id)&&String(draftFor(b.id).markdown||'').length>300);
@@ -115,7 +116,7 @@ function readingEstimate(b){
 }
 function card(b){
  const pending=!hasWrittenSummary(b),pr=progressFor(b),can=canRead(b);
- const shortStatus=full(b)?(b.summaryCoverage==='full'?'Ringkasan lengkap':'Ringkasan bagian awal'):staged(b)?'Baca draf editorial':hasWrittenSummary(b)?(b.editorialStatus==='ringkas'?'Draf ringkasan awal':'Belum tersedia'):'Menunggu ringkasan';
+ const shortStatus=QIRAAH_10PDF_PENDING.has(b.id)&&!full(b)?'Ringkasan 10–15 menit belum siap':full(b)?(b.summaryCoverage==='full'?'Ringkasan lengkap':'Ringkasan bagian awal'):staged(b)?'Baca draf editorial':hasWrittenSummary(b)?(b.editorialStatus==='ringkas'?'Draf ringkasan awal':'Belum tersedia'):'Menunggu ringkasan';
  return `<article class="book-card ${pending?'book-card-waiting':'book-card-featured'}"><div class="cover-wrap"><a class="book-link" data-animate-book="true" href="#/baca/${qs(b.id)}" aria-label="Buka ${esc(b.titleAr)}">${cover(b)}</a><button class="bookmark-float" data-action="bookmark" data-id="${esc(b.id)}" title="${isBookmark(b.id)?'Hapus dari rak':'Simpan ke Rak Saya'}" aria-label="Simpan ${esc(b.titleAr)}">${isBookmark(b.id)?'♥':'♡'}</button></div><a class="book-link" data-animate-book="true" href="#/baca/${qs(b.id)}"><div class="book-title" dir="rtl" lang="ar">${esc(b.titleAr)}</div><div class="book-author">${esc(authorShort(b))}</div><div class="book-below">${esc(shortStatus)} · ${esc(b.genre)}</div><div class="reading-time-chip">◷ ${esc(readingEstimate(b))}</div>${can&&pr>0?`<div class="card-progress"><span style="width:${pr}%"></span></div><small class="card-progress-note">${doneFor(b)?'✓ Selesai':Math.round(pr)+'% dibaca'}</small>`:''}</a></article>`;
 }
 function genreCard(g,i){const n=mainCatalog().filter(b=>b.genre===g).length;return `<a class="genre-card" href="#/jelajahi?fan=${qs(g)}"><div><span class="genre-icon">${['✧','◈','⌘','❖','✥','✦','❂','☷','◌'][i%9]}</span><strong>${esc(g)}</strong><small>${n} judul</small></div><span style="color:#afbfaf;font-size:20px">↗</span></a>`}

@@ -13,6 +13,7 @@ on:
       - 'assets/covers/**'
       - 'QIRAAH_COVER_IMPORT_BOUTHI.json'
       - 'scripts/qa_bouthi_covers.cjs'
+      - 'scripts/qa_qiraah_10pdf_live.cjs'
 
 permissions:
   contents: read
@@ -30,5 +31,13 @@ jobs:
           node --check assets/books.js
           node --check assets/app.js
           node --check scripts/qa_bouthi_covers.cjs
-      - name: Verify exact uploaded cover references and unchanged summaries
-        run: node scripts/qa_bouthi_covers.cjs
+      - name: Verify original al-Buthi covers or new Qiraah PDF intake
+        env:
+          PR_HEAD_REF: ${{ github.head_ref }}
+        run: |
+          if [ "$PR_HEAD_REF" = "qiraah-10pdf-catalog-preview-20261122" ]; then
+            node --check scripts/qa_qiraah_10pdf_live.cjs
+            node scripts/qa_qiraah_10pdf_live.cjs
+          else
+            node scripts/qa_bouthi_covers.cjs
+          fi
