@@ -177,3 +177,14 @@ GitHub Pages workflow run 38 `43862568124` sukses. Firecrawl maxAge:0 pada lima 
 - `assets/app.js`: `QIRAAH_10PDF_PENDING` disempitkan menjadi `AD-039/042/060/061/063`; ketiga artikel ACC muncul dalam pembaca situs. `QIRAAH_BOUTHI_FOCUS=false` untuk dua pengarang pada cabang rilis.
 - Fallback HTML `kitab/AD-040`, `AD-041`, `AD-062` kini menampilkan sampul nyata dan link menuju pembaca `#/baca/<id>`, dengan durasi akurat.
 - Workflow CI lama masih dirancang untuk 85 kitab dan fokus al-Buthi; dibuat `scripts/qa_qiraah_10pdf_live.cjs` dan pemilihan tes sesuai branch di `.github/workflows/qa-bouthi-covers.yml`. Tes CI serta merge/deploy harus diverifikasi, jangan klaim live sebelum sukses.
+
+
+## Addendum audit unggahan 17 PDF dan draf privat — 22 November 2026
+
+- Pengguna meminta ringkasan mendalam mengikuti SOP serta pemasangan ke Qira’ah **tanpa mengganti isi yang sudah paten**. Baseline saat mulai: `main` commit `7039e36da8e37c19562d4bf2ba1478cbe7c6efcf`, 90 buku, 19 `summaryMd` kosong.
+- 17 PDF baru diterima, semua cocok dengan ID katalog lama: `AD-046` s.d. `AD-058`, `AD-060`, `AD-061`, `AD-063`, `AB-038`. **Dua sumber belum dikirim** dari 19 blank: `KR-018` نقض أوهام المادية الجدلية dan `AD-059` منظومة السدرة شرح مختصر الهجرة.
+- **1.611 halaman** PDF fisik dikunci SHA-256 masing-masing di `assets/books.js` (hanya 17 entri yang kosong sebelumnya) dan laporan `docs/qiraah/AUDIT_17_PDF_2026-11-22.md` pada **cabang review `qiraah-audit-17pdf-20261122`**. Jangan menyimpulkan seluruh halaman sudah dibaca detail; sebagian OCR rusak.
+- Dihasilkan secara privat **16 naskah draf tematik**, panjang tidak merata sekitar 700–1.180 kata, dan **1 peta awal analitis** untuk `AB-038` (316 halaman scanned image-only; judul sebenarnya `إشكالية تجديد أصول الفقه`, bukan `تحديد`). PDF `AD-055` juga 12 halaman gambar infografis.
+- Peta bab/segmen, audit hak, QA, sumber SHA, dan naskah privat telah dikemas dalam `QIRAAH_17_PDF_DRAF_REVIEW_PRIVAT_2026-11-22.zip`, diserahkan sebagai **attachment percakapan**, bukan repo publik. File PDF Arab mentah/cover/catatan privat **tidak** diunggah GitHub.
+- **Publication gate: HOLD**: audit sumber rinci/ayat-hadis masih terbuka, izin adaptasi/penggunaan sampul belum terdokumentasi untuk setiap edisi (beberapa PDF menyatakan hak dilindungi atau versi masih diedit), belum ada ACC pemilik untuk **17 naskah baru**. Tidak ada naskah baru dipublikasikan, tidak ada merge/deploy dari cabang review.
+- Aturan sangat penting: **90 `summaryMd`, 90 `coverUrl`, semua `published`, judul dan ID katalog lama harus persis sama dengan baseline**. Ringkasan `AB-001` dan tiga artikel telah ACC `AD-040`/`AD-041`/`AD-062` tetap utuh. Tidak boleh melabeli draf tematik singkat sebagai edisi baca 10–15 menit selesai.
