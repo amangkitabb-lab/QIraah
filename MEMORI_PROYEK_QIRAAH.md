@@ -168,3 +168,5 @@ GitHub Pages workflow run 38 `43862568124` sukses. Firecrawl maxAge:0 pada lima 
 - Untuk memungkinkan cover al-Adni muncul di **cabang review**, `QIRAAH_BOUTHI_FOCUS=false` pada `assets/app.js`; 8 ID intake mendapat label `Ringkasan 10–15 menit belum siap` selama `publicationGate` belum lulus. **Tidak otomatis diterapkan ke main; UI browser belum diverifikasi.**
 - `AB-001` tidak disentuh, memiliki ringkasan ±13 menit dan cover. `AB-038` menurut `books.js` review **masih tanpa ringkasan/cover** walau pengguna menyebut Isykaliyyat sudah ada; jangan menimpa hingga identitas/ID naskah yang dimaksud terselesaikan.
 - Dokumentasi lengkap `docs/qiraah/COVER_8_STATUS_2026-11-22.md` di cabang review; **STOP_RELEASE** ringkasan dan sampul ke `main` sampai hak serta approval terverifikasi. Katalog/artefak lama tidak dihapus.
+
+- **Tindak lanjut cover 22 November 2026:** fallback HTML `kitab/AD-040/index.html`, `kitab/AD-041/index.html`, dan `kitab/AD-062/index.html` ditambah elemen `<img>` cover dan label belum siap, khusus di PR #3; belum merge/deploy.
