@@ -24,7 +24,7 @@ for(const id of approved){
  assert(book.ownerFinal&&book.humanApproval,'Missing owner editorial approval '+id);
  assert.equal(book.summaryCoverage,'partial','Tematic summaries must not claim entire book '+id);
  assert(book.published,'Approved public reading edition not marked published '+id);
- const n=book.summaryMd.split(/\\s+/).filter(Boolean).length;
+ const n=book.summaryMd.split(/\s+/).filter(Boolean).length;
  assert(n>=1750&&n<2600,'Actual approved edition is not 10-15 minutes '+id+' words='+n);
  for(const needle of ['## Peta sumber privat','SOURCE_LOCK:','CURRENT_PHASE:','PUBLICATION=HOLD']){
   assert(!book.summaryMd.includes(needle),'Private editor/source note leaked for '+id+': '+needle);
@@ -42,7 +42,7 @@ for(const id of approved){
 }
 for(const id of ['AD-039','AD-042','AD-060','AD-061','AD-063']){
  assert(byId.has(id),'Missing pending title '+id);
- assert(byId.get(id).summaryMd.split(/\\s+/).length<400,'Unexpected false full summary '+id);
+ assert(byId.get(id).summaryMd.split(/\s+/).length<400,'Unexpected false full summary '+id);
 }
 assert.equal(byId.get('AB-001').summaryMd,baseById.get('AB-001').summaryMd,'Existing Adab al-Hiwar summary changed');
 assert.equal(byId.get('AB-001').coverUrl,baseById.get('AB-001').coverUrl,'Adab al-Hiwar cover changed');
@@ -51,5 +51,5 @@ assert(app.includes('const QIRAAH_BOUTHI_FOCUS=false;'),'Both author groups must
 assert(app.includes("const QIRAAH_10PDF_PENDING=new Set(['AD-039','AD-042','AD-060','AD-061','AD-063']);"),'Ready titles are still blocked');
 for(const id of add)assert(fs.existsSync(path.join('kitab',id,'index.html')),'Missing new page '+id);
 const diff=cp.execFileSync('git',['diff','--name-only','origin/main...HEAD'],{encoding:'utf8'});
-assert(!diff.split('\\n').some(s=>/\\.(pdf|zip|env)$/i.test(s)),'Raw source or secret file uploaded');
+assert(!diff.split(String.fromCharCode(10)).some(s=>['.pdf','.zip','.env'].some(ext=>s.toLowerCase().endsWith(ext))),'Raw source or secret file uploaded');
 console.log('PASS Qiraah: 90 unique books, five catalog additions, three approved 10-15m summaries and covers, intact legacy catalog, PDF originals not published.');
